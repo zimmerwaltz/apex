@@ -1,0 +1,80 @@
+//mixins file
+
+@mixin custom-field{
+    border-radius: 0;
+    border:0;
+    border-bottom: 2px solid $lightGrey;
+    background-color: white;
+    padding:1rem;
+    &:focus{
+        box-shadow: none;
+        border-color: $primary-color;
+
+    }
+}
+
+@mixin link-styling($color:$primary-color){
+    color:$color;
+    transition:all 0.3s;
+    // font-weight: 700;
+    &:hover{
+        color:darken($color,10%);
+        text-decoration:none
+    }
+}
+
+@mixin button($color:$primary-color){
+    background-color:$color;
+    text-transform: uppercase;
+    padding: 0.8rem 3rem;
+    color:white;
+    font-weight: 700;
+    border-radius:2rem;
+    border:0px;
+    letter-spacing: 0.3px;
+    &:hover,&:active{
+        background: darken($color,10%) !important;
+    }
+    &:focus{
+        outline:none !important;
+        box-shadow: none;
+    }
+}
+
+@mixin button-outline($color:$primary-color){
+    background-color:transparent;
+    text-transform: uppercase;
+    padding: 0.8rem 3rem;
+    color:$color;
+    font-weight: 700;
+    border-radius:2rem;
+    border:2px solid $color;
+    letter-spacing: 0.3px;
+    &:hover{
+        background: darken($color,10%);
+    }
+}
+
+@mixin header-underline{
+    content: "";
+    display: block;
+    width: 25%;
+    height: 4px;
+    background-color:$darkBlue;
+    margin-top:10px;
+}
+
+@mixin page-header($bgColor:$primary-color){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: $bgColor;
+}
+
+@mixin alert-messages($color) {
+    color:darken($color,25%);
+    background-color: lighten($color,50%);
+    border-color:lighten($color,50%);
+}

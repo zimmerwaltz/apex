@@ -1,0 +1,176 @@
+a {
+  color: #454ADE;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  a:hover {
+    color: #242acc;
+    text-decoration: none; }
+
+.btn {
+  background-color: #454ADE;
+  text-transform: uppercase;
+  padding: 0.8rem 3rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 2rem;
+  border: 0px;
+  letter-spacing: 0.3px; }
+  .btn:hover, .btn:active {
+    background: #242acc !important; }
+  .btn:focus {
+    outline: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+.alert-success {
+  color: #05562c;
+  background-color: #dcfdec;
+  border-color: #dcfdec; }
+
+.alert-danger {
+  color: #510000;
+  background-color: #ffd0d0;
+  border-color: #ffd0d0; }
+
+.form-group label {
+  color: #333;
+  font-weight: 700; }
+
+.form-group .form-control {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid #FAFCFC;
+  background-color: white;
+  padding: 1rem; }
+  .form-group .form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #454ADE; }
+
+/* Preloader code starts */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 999; }
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #1E91D6;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite; }
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FF6B35;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite; }
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FFD23F;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/* Preloader code ends */
+#email .page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #454ADE; }
+  #email .page-header .header-underline::after {
+    background-color: white; }
+
+span.multiselect-native-select {
+  display: block; }
+  span.multiselect-native-select .btn-group {
+    width: 100%; }
+    span.multiselect-native-select .btn-group .multiselect {
+      text-align: left;
+      width: 100%;
+      padding: 0.6rem 1.2rem;
+      background-color: transparent;
+      color: #454ADE;
+      border: 2px solid #454ADE;
+      font-weight: 400;
+      text-transform: capitalize;
+      border-radius: 100px;
+      overflow: hidden;
+      background-color: #FAFCFC; }
+      span.multiselect-native-select .btn-group .multiselect:hover, span.multiselect-native-select .btn-group .multiselect:active {
+        background-color: transparent !important; }
+      span.multiselect-native-select .btn-group .multiselect::after {
+        position: absolute;
+        right: 15px;
+        top: 19px; }
+    span.multiselect-native-select .btn-group .multiselect-container {
+      right: 0; }
+      span.multiselect-native-select .btn-group .multiselect-container li:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: none; }
+      span.multiselect-native-select .btn-group .multiselect-container li a {
+        display: block; }
+        span.multiselect-native-select .btn-group .multiselect-container li a:focus {
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          outline: none; }
+        span.multiselect-native-select .btn-group .multiselect-container li a label {
+          display: block;
+          padding: 10px 10px 5px 10px; }
+          span.multiselect-native-select .btn-group .multiselect-container li a label:focus {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            outline: none; }

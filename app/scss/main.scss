@@ -1,0 +1,53 @@
+//main.scss file
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+@import "../fontawesome/scss/fontawesome.scss";
+// @import "../fontawesome/scss/brands.scss";
+@import "../fontawesome/scss/solid.scss";
+
+body{
+    background: white;
+    font-family: $font;
+    font-weight: 400;
+    min-height: 100vh;
+    color:$darkBlue;
+}
+
+.navbar {
+    background-color: white;
+    padding:1rem;
+    .fas{
+        font-size:1.5rem;
+    }
+}
+
+.page-header{
+    @include page-header($primary-color);
+    .header-underline{
+        &::after{
+        background-color: white;
+        }
+    }
+}
+
+section{
+    background-color: lighten($primary-color, 42%);
+    min-height:80vh;
+}
+
+.btn-primary{
+    @include button;
+}
+
+.header-underline{
+    &::after{
+        @include header-underline;
+    }
+}
+
+footer{
+    background-color: white;
+    padding:1rem;
+}
+

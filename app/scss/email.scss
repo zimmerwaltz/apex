@@ -1,0 +1,70 @@
+// send mail section scss starts
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+
+#email{
+    .page-header{
+        @include page-header($primary-color);
+        .header-underline{
+            &::after{
+            background-color: white;
+            }
+        }
+    }
+}
+
+span.multiselect-native-select{
+    display: block;
+    .btn-group{
+        width:100%;
+        .multiselect{
+            text-align: left;
+            width: 100%;
+            padding:0.6rem 1.2rem;
+            background-color: transparent;
+            color:$primary-color;
+            border:2px solid $primary-color;
+            font-weight: 400;
+            text-transform: capitalize;
+            border-radius:100px;
+            overflow: hidden;
+            background-color: $lightGrey;
+            &:hover,&:active{
+                background-color: transparent !important;
+            }
+            &::after{
+                position: absolute;
+                right: 15px;
+                top: 19px;
+            }
+        } 
+
+        .multiselect-container{
+            right:0;
+            li{
+                &:focus{
+                    box-shadow: none;
+                    outline: none; 
+                }
+                a{
+                    display:block;
+                    &:focus{
+                        box-shadow: none;
+                        outline: none;
+                    }
+                    label{
+                        display:block;
+                        padding:10px 10px 5px 10px;
+                        &:focus{
+                            box-shadow: none;
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

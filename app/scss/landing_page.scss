@@ -1,0 +1,15 @@
+//main.scss file
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+
+#landing-page{
+    background-color:white;
+    min-height: 100vh;
+    .content{
+        color:$darkBlue;
+        .h1{
+            font-weight: 900;
+        }
+    }
+}

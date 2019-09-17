@@ -1,0 +1,134 @@
+a {
+  color: #454ADE;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  a:hover {
+    color: #242acc;
+    text-decoration: none; }
+
+.btn {
+  background-color: #454ADE;
+  text-transform: uppercase;
+  padding: 0.8rem 3rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 2rem;
+  border: 0px;
+  letter-spacing: 0.3px; }
+  .btn:hover, .btn:active {
+    background: #242acc !important; }
+  .btn:focus {
+    outline: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+.alert-success {
+  color: #05562c;
+  background-color: #dcfdec;
+  border-color: #dcfdec; }
+
+.alert-danger {
+  color: #510000;
+  background-color: #ffd0d0;
+  border-color: #ffd0d0; }
+
+.form-group label {
+  color: #333;
+  font-weight: 700; }
+
+.form-group .form-control {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid #FAFCFC;
+  background-color: white;
+  padding: 1rem; }
+  .form-group .form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #454ADE; }
+
+/* Preloader code starts */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 999; }
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #1E91D6;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite; }
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FF6B35;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite; }
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FFD23F;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/* Preloader code ends */
+.card {
+  background-color: white;
+  border: none;
+  border-radius: 0;
+  border-left: 2px solid #FFD23F;
+  -webkit-box-shadow: 1px 2px 1px 1px #eaf2f2;
+  box-shadow: 1px 2px 1px 1px #eaf2f2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .card a {
+    color: #d8a500;
+    font-size: 1rem; }
+    .card a .fa-file-pdf {
+      color: #D00000;
+      margin-right: 0.5rem; }
+  .card:hover, .card:focus {
+    -webkit-box-shadow: 0px 2px 1px 1px #f7fafa;
+    box-shadow: 0px 2px 1px 1px #f7fafa; }
